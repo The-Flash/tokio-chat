@@ -1,0 +1,15 @@
+[package]
+name = "tokio-chat"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.48.0", features = ["macros", "net", "rt", "tokio-macros"] }
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
